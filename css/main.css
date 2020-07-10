@@ -1,3 +1,16 @@
+
+p, table, tr, td, ul, li, blockquote, nav, a, footer, dl, dt, dd {
+  font-size: 1.85rem;
+  font-family: "proxima-nova", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.lightslategray {
+  color: lightslategray;
+}
+
 nav.navbar {
   border-radius: 0 !mportant;
 }
@@ -45,7 +58,7 @@ nav.navbar {
 
 .ap-check .panel-title::before {
    content: "\f0c8\00a0\00a0";
-   font-family: "Fontawesome light";
+   font-family: "Fontawesome";
    font-size: 150%;
 }
 
@@ -68,4 +81,24 @@ nav.navbar {
   margin-top: 1rem;
   margin-bottom: 3rem;
   color: lightslategray;
+}
+
+h3.panel-title {
+  font-size: 2.25rem;
+}
+
+h4.media-heading a {
+  font-weight: bold !important;
+}
+
+ul.bullies>li {
+  margin-bottom: 1.5rem;
+}
+
+footer.footer {
+  margin-top: 5rem;
+}
+
+.media-left img {
+  margin-right: 2rem;
 }

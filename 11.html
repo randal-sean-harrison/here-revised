@@ -8,11 +8,15 @@
   <title>Return to Campus 2020</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://use.typekit.net/cti7nio.css">
 
   <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://kit.fontawesome.com/2dbe7ff21a.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -43,7 +47,7 @@
         <a href="index.html">Return to Campus Orientation</a>
       </li>
       <li class="breadcrumb-item active">
-        Sign the Commitment
+        Make the Commitment
       </li>
     </ol>
   </nav>
@@ -53,20 +57,60 @@
 
     <div class="row">
 
-      <h1>Sign the Commitment</h1>
+      <h1>Make the Commitment</h1>
 
-      <p class="lead">We’re accountable to ourselves&mdash;and each other.</p>
+      <p class="lead">We’re accountable to ourselves and each other.</p>
 
       <p>While we are excited to be together HERE on campus this fall, we must commit to one another to hold ourselves and each other accountable to the new practices you’ve reviewed in this learning program. Therefore, as a condition of returning to
-        campus, all students, faculty and staff are expected to incorporate the following practices and behaviors established by the University of Notre Dame:</p>
+        campus, all students, faculty and staff are expected to incorporate the following practices and behaviors established by the University of Notre Dame.</p>
+        <p>The information in this orientation, with additional detail, is being compiled into a COVID-19 Playbook available <a href="https://here.nd.edu"><strong>HERE</strong></a>. Notre Dame will update you directly with any major updates to our campus protocols to ensure you have the latest and most detailed information.</p>
 
-      <div class='alert alert-default' role='alert'>
-        <p>Check the box next to each to affirm your commitment to keep Notre Dame safe. Add you name and email address and click
-          “sign commitment”. You will receive an email confirming your completion of the orientation.</p>
+      <div class='alert alert-success' role='alert' style="margin-top: 3rem; margin-bottom: 5rem;">
+        <p><i class="far fa-check-square green"></i> &nbsp;Check the box next to each to affirm your commitment to keep Notre Dame safe. </p>
+      </div>
+
+      <p class="hidden">Add you name and email address and click Submit. You will receive an email confirming your completion of the orientation.</p>
+
+      <h2 class='text-center'>I commit to:</h2>
+
+      <div class="ap-container" style="margin-top: 4rem;">
+        <div class="panel panel-default">
+          <div class="panel-heading ap-check">
+            <h3 class="panel-title">Following health protocols</h3>
+            <div class="panel-body ap-content">
+
+              <ul class="list-unstyled bullies" style="margin-left: 2.5rem;">
+                <li><i class="fas fa-fw lightslategray fa-lg fa-hands-wash"></i> &nbsp;&nbsp;&nbsp;by maintaining <strong>personal hygiene</strong></li>
+                <li><i class="fas fa-fw lightslategray fa-lg fa-head-side-mask"></i> &nbsp;&nbsp;&nbsp;by <strong>wearing a mask</strong></li>
+                <li><i class="fas fa-fw lightslategray fa-lg fa-people-arrows"></i> &nbsp;&nbsp;&nbsp;by practicing <strong>social distancing</strong></li>
+                <li><i class="fas fa-fw lightslategray fa-lg fa-pump-medical"></i> &nbsp;&nbsp;&nbsp;by <strong>cleaning / disinfecting</strong> my environs</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading ap-check">
+            <h3 class="panel-title">Protecting our Campus and Community</h3>
+            <div class="panel-body ap-content">by participating in <strong>health monitoring</strong>, and observe instructions from <strong>HERE signage</strong> and <strong>HERE Ambassadors</strong>.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading ap-check">
+            <h3 class="panel-title">Leading with Kindness</h3>
+            <div class="panel-body ap-content">by demonstrating <strong>respect</strong> and <strong>kindness</strong> for each other as we all work to navigate uncertainty and change.</div>
+          </div>
+        </div>
       </div>
 
 
-      <div class="highlight">
+      <p id="thanks-div" class="text-center" style="margin-top: 3rem">
+        <a role="button" class="btn btn-lg btn-success" href="12.html">Submit</a>
+      </p>
+
+
+      <div class="highlight hidden">
         <div class="ap-container">
           <div class="">
             <div class="panel-heading ap-check">
@@ -96,12 +140,12 @@
         </form>
 
         <form class="bsr-form " action="">
-          <button type="submit" class="btn btn-primary" id="bsr-submit-button">Sign Commitment</button>
+          <button type="submit" class="btn btn-primary" id="thanks-div">Sign Commitment</button>
         </form>
 
       </div>
 
-      <div class="alert alert-info" role="alert" style="margin-top: 6rem;">
+      <div class="alert alert-info hidden" role="alert" style="margin-top: 6rem;">
         <p>
           <strong>COVID-19 Playbook</strong>
           <br>
@@ -139,30 +183,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script>
-    $(document).ready(function() {
+  <script src="js/main.js"></script>
 
-      function activateChecklist() {
-
-        // Activate instructions
-        $(".ap-check h3").on("click", function() {
-
-          if ($(this).parent().hasClass("ap-checked")) {
-            $(this).parent().removeClass("ap-checked");
-
-          } else {
-            $(this).parent().addClass("ap-checked");
-
-          }
-
-        });
-
-      }
-
-      activateChecklist();
-
-    });
-  </script>
 
 </body>
 
