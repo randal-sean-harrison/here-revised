@@ -63,3 +63,9 @@ nav.navbar {
   background: #f6f7fb;
   padding: 2rem;
 }
+
+#subheading {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: lightslategray;
+}
